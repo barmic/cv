@@ -1,0 +1,130 @@
+:root {
+    margin: 0;
+    padding: 0;
+    --base00: #181818; /* Default Background */
+    --base01: #282828; /* Lighter Background (Used for status bars) */
+    --base02: #383838; /* Selection Background */
+    --base03: #585858; /* Comments, Invisibles, Line Highlighting */
+    --base04: #b8b8b8; /* Dark Foreground (Used for status bars) */
+    --base05: #d8d8d8; /* Default Foreground, Caret, Delimiters, Operators */
+    --base06: #e8e8e8; /* Light Foreground (Not often used) */
+    --base07: #f8f8f8; /* Light Background (Not often used) */
+    --base08: #ab4642; /* Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+    --base09: #dc9656; /* Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+    --base0A: #f7ca88; /* Classes, Markup Bold, Search Text Background */
+    --base0B: #a1b56c; /* Strings, Inherited Class, Markup Code, Diff Inserted */
+    --base0C: #86c1b9; /* Support, Regular Expressions, Escape Characters, Markup Quotes */
+    --base0D: #7cafc2; /* Functions, Methods, Attribute IDs, Headings */
+    --base0E: #ba8baf; /* Keywords, Storage, Selector, Markup Italic, Diff Changed */
+    --base0F: #a16946; /* Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
+    --largeur: 100%;
+    --fontSize: 3.5vw;
+}
+@media screen and (min-width: 1200px) {
+    :root {
+        --largeur: 60%;
+        --fontSize: 1.5vw;
+    }
+}
+.db {
+    --color: var(--base08)
+}
+.programming {
+    --color: var(--base0D)
+}
+.exploitation {
+    --color: var(--base0E)
+}
+
+body {
+    margin: 0;
+    background-color: var(--base00);
+    color: var(--base05);
+    font-size: var(--fontSize);
+}
+:link {
+    text-decoration: underline;
+    color: var(--base05);
+}
+a:visited {
+    text-decoration: none;
+    color: var(--base05);
+}
+
+body > header {
+    display: flex;
+    padding: 12px 12px 0 12px;
+    background-color: var(--base02);
+}
+div.header {
+    flex: 1 1 auto;
+}
+div.contact {
+    flex: initial;
+}
+div.contact > ul {
+    list-style-type: none;
+}
+h1.header {
+    margin: 0;
+    color: var(--base0D);
+}
+h2.header {
+    color: var(--base0C);
+}
+
+/* Navigation */
+nav {
+    height: 2em;
+    max-width: var(--largeur);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav > a {
+    display: block;
+    text-align: center;
+    padding: 1vw;
+}
+nav a:first-child {
+    border-radius: 10px 0 0 10px;
+}
+nav a:last-child {
+    border-radius: 0 10px 10px 0;
+}
+nav > a:hover {
+    background-color: var(--base04);
+    color: var(--base01);
+}
+nav > a.selected {
+    background-color: var(--base0F);
+    color: var(--base01);
+}
+
+/* section */
+main {
+    width: var(--largeur);
+    margin-left: auto;
+    margin-right: auto;
+}
+section > h1 {
+    color: var(--base09);
+}
+article > h1 {
+    color: var(--base0A);
+}
+
+/* Tags */
+ul.tags {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.tags > li > a {
+    display: block;
+    text-decoration: none;
+    padding-right: 1em;
+    color: var(--color, var(--base0F));
+}
