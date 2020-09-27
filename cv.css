@@ -20,10 +20,43 @@
     --largeur: 100%;
     --fontSize: 3.5vw;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
     :root {
         --largeur: 60%;
         --fontSize: 1.5vw;
+    }
+}
+@media screen {
+    section.hidden {
+        display: none;
+    }
+    .print {
+        display: none;
+    }
+}
+@media print {
+    body {
+        font-size: 10pt !important;
+    }
+    nav {
+        display: none !important;
+    }
+    .no-print {
+        display: none;
+    }
+    @page
+    {
+        size:  auto; /* auto is the initial value */
+        margin: 0mm; /* this affects the margin in the printer settings */
+    }
+    body
+    {
+        padding: 10mm 15mm 10mm 15mm; /* margin you want for the content */
     }
 }
 .db {
@@ -60,10 +93,22 @@ div.header {
     flex: 1 1 auto;
 }
 div.contact {
-    flex: initial;
+    display: grid;
 }
-div.contact > ul {
-    list-style-type: none;
+div.contact > div.email {
+    grid-row: 1;
+}
+div.contact > div.phone {
+    grid-row: 2;
+}
+div.contact > div.mail {
+    grid-row: 3;
+}
+div.contact > div.icon {
+    grid-column: 1;
+}
+div.contact > div.txt {
+    grid-column: 2;
 }
 h1.header {
     margin: 0;
@@ -86,7 +131,7 @@ nav {
 nav > a {
     display: block;
     text-align: center;
-    padding: 1vw;
+    padding: 0.6vw 1vw 1vw 1vw;
 }
 nav a:first-child {
     border-radius: 10px 0 0 10px;
@@ -111,6 +156,9 @@ main {
 }
 article > h2 {
     color: var(--base0A);
+}
+p {
+    text-align: justify;
 }
 
 /* Tags */

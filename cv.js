@@ -1,9 +1,9 @@
 function go(dest) {
     for(let part of document.querySelectorAll("section")) {
         if (part.id === dest) {
-            part.style.display = '';
+            part.classList.remove('hidden');
         } else {
-            part.style.display = 'none';
+            part.classList.add('hidden');
         }
     }
     for(let menu of document.querySelectorAll("nav > a")) {

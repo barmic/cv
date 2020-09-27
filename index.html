@@ -15,21 +15,23 @@
               <h2 class="header">Ingénieur logiciel</h2>
           </div>
           <div class="contact">
-            <ul>
-                <li><a href="mailto:michel.barret@gmail.com"><i class="material-icons">alternate_email</i></a></li>
-                <li><a href="tel:+33675139597"><i class="material-icons">call</i></a></li>
-                <li><i class="material-icons">mail</i></li>
-            </ul>
+              <div class="icon email"><a href="mailto:michel.barret@gmail.com"><i class="material-icons">alternate_email</i></a></div>
+              <div class="txt email"><a href="mailto:michel.barret@gmail.com"><span class="desktop">michel.barret@gmail.com</span></a></div>
+              <div class="icon phone"><a href="tel:+33675139597"><i class="material-icons">call</i></a></div>
+              <div class="txt phone"><span class="desktop">06⋅75⋅13⋅95⋅97</span></a></div>
+              <div class="icon mail"><i class="material-icons">mail</i></div>
+              <div class="txt mail"><span class="desktop">21 rue Le Brix</br>38 100 Grenoble</span></div>
           </div>
       </header>
       <nav>
         <a class="realisations selected" onclick="go('realisations')">Réalisations</a>
-        <a class="formation" onclick="go('formation')">Formations</a>
+        <a class="formations" onclick="go('formations')">Formations</a>
         <a class="snowcamp" onclick="go('snowcamp')">Snowcamp</a>
         <a class="diplomes" onclick="go('diplomes')">Diplômes</a>
       </nav>
       <main>
           <section id="realisations"><!-- Rélaisation -->
+            <h2 class="print">Rélaisations</h2>
               <article>
                   <h2>SFR</h2>
                   <p>Développement d'une plateforme pour les applications mobile du groupe Altice. La plateforme a pour objectif de permettre :</p>
@@ -79,7 +81,8 @@
                     </footer>
               </article>
           </section>
-          <section id="formation"><!-- Formation -->
+          <section id="formations" class="hidden"><!-- Formations -->
+            <h2 class="print">Formations</h2>
             <article>
                 <h2>TP Réseau</h2>
                 <p>Traveaux pratiques de réseau pour polytech :</p>
@@ -110,17 +113,19 @@
                 </ul>
             </article>
           </section>
-          <section id="snowcamp"><!-- Snowcamp -->
+          <section id="snowcamp" class="hidden"><!-- Snowcamp -->
+            <h2 class="print">Snowcamp</h2>
             <article>
-                <h2>Snowcamp</h2>
+                <h2 class="no-print">Snowcamp</h2>
                 <p>Je suis organisateur du Snowcamp depuis l'édition 2018. Il s'agit d'une conférence informatiqueayant lieu à Grenoble.
                     <a href="https://snowcamp.io/fr/">snowcamp.io</a>
                 </p>
             </article>
           </section>
-          <section id="diplomes"><!-- Diplômes -->
+          <section id="diplomes" class="hidden"><!-- Diplômes -->
+            <h2 class="print">Diplômes</h2>
             <article>
-                <h2>Diplômes</h2>
+                <h2 class="no-print">Diplômes</h2>
                 <ul>
                     <li>2009 → 2011 <em>Master professionnel génie informatique</em> Université Joseph Fourier à Grenoble</li>
                     <li>2008 → 2009 <em>Licence informatique</em> Université Joseph Fourier à Grenoble</li>
