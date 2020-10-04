@@ -173,3 +173,11 @@ ul.tags > li > a {
     padding-right: 1em;
     color: var(--color, var(--base0F));
 }
+
+p.date {
+    text-align: center;
+}
+p.diplome {
+    text-align: center;
+    border: 2px;
+}

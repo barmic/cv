@@ -24,13 +24,13 @@
           </div>
       </header>
       <nav>
-        <a class="realisations selected" onclick="go('realisations')">Réalisations</a>
-        <a class="formations" onclick="go('formations')">Formations</a>
+        <a class="developpements selected" onclick="go('developpements')">Développements</a>
+        <a class="enseignement" onclick="go('enseignement')">Enseignement</a>
         <a class="snowcamp" onclick="go('snowcamp')">Snowcamp</a>
         <a class="diplomes" onclick="go('diplomes')">Diplômes</a>
       </nav>
       <main>
-          <section id="realisations"><!-- Rélaisation -->
+          <section id="developpements"><!-- Rélaisation -->
             <h2 class="print">Rélaisations</h2>
               <article>
                   <h2>SFR</h2>
@@ -42,7 +42,7 @@
                       <li>certains services spécifiques à des applications</li>
                       <li>l'exploitation de toutes les statistiques à des fins de support et marketing</li>
                     </ul>
-                    <p>Mon rôle dans ce projet est de développement, l'architecture, la maintenance opérationnelle , les tests et les benchmarks.</p>
+                    <p>Mon rôle dans ce projet est de développement, l'architecture, la maintenance opérationnelle, les tests et les benchmarks.</p>
                   <footer>
                       <ul class="tags">
                           <li><a class="programming">Java</a></li>
@@ -80,9 +80,91 @@
                       </ul>
                     </footer>
               </article>
+              <article>
+                  <h2>Serveur de SMS</h2>
+                  <p>Développement d'un serveur de SMSC.</p>
+                  <ul>
+                      <li>mise au point du connecteur pour MAP</li>
+                      <li>développement du stockage pour réexpédition des messages</li>
+                  </ul>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">Java</a></li>
+                        <li><a class="db">Redis</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Inventaire automatisé</h2>
+                  <p>Développement d'un système d'inventaire automatique de magasins basé sur de la RFID.</p>
+                  <ul>
+                      <li>mise au point du connecteur pour MAP</li>
+                      <li>développement du stockage pour réexpédition des messages</li>
+                  </ul>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">Java</a></li>
+                        <li><a class="db">Elasticsearch</a></li>
+                        <li><a class="db">Cassandra</a></li>
+                        <li><a class="programming">Spring</a></li>
+                        <li><a class="programming">RxJava</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Alarme banquaire</h2>
+                  <p>Développement d'une alarme connectée à destination des banques.</p>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">Java</a></li>
+                        <li><a class="db">SQL Server</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Plateforme d'échange et de confiance</h2>
+                  <p>Développement d'un bus de communication interministeriel.</p>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">JSF</a></li>
+                        <li><a class="db">Oracle</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Informatisation des salles de tests électriques</h2>
+                  <p>Informatisation du carnet de lot de la salle de test.</p>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">JSF</a></li>
+                        <li><a class="db">MySQL</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Visualisation de traces</h2>
+                  <p>Programmation d'une solution de visualisation de traces dans le contexte de l'embarqué.</p>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">C</a></li>
+                        <li><a>architecture NUMA</a></li>
+                    </ul>
+                  </footer>
+              </article>
+              <article>
+                  <h2>Traduction d'un simulateur nucléaire</h2>
+                  <p>Réécrire les modules thermique et mécanique en C++ de l'application Atlas, un simulateur de réacteur nucléaire haute pression.</p>
+                <footer>
+                    <ul class="tags">
+                        <li><a class="programming">C++</a></li>
+                        <li><a class="programming">python</a></li>
+                    </ul>
+                  </footer>
+              </article>
           </section>
-          <section id="formations" class="hidden"><!-- Formations -->
-            <h2 class="print">Formations</h2>
+          <section id="enseignement" class="hidden"><!-- Enseignement -->
+            <h2 class="print">Enseignement</h2>
+            <p></p>
             <article>
                 <h2>TP Réseau</h2>
                 <p>Traveaux pratiques de réseau pour polytech :</p>
@@ -94,7 +176,7 @@
             </article>
             <article>
                 <h2>NoSQL</h2>
-                <p>Traveaux dirigés et pratiques NoSQL:</p>
+                <p>Traveaux dirigés et pratiques NoSQL :</p>
                 <ul>
                     <li>apprentissage du partitionnement</li>
                     <li>découverte de Map/Reduce</li>
@@ -103,14 +185,19 @@
             </article>
             <article>
                 <h2>Viseo</h2>
-                <p>Diverse formations internes et ouvertes:</p>
+                <p>Diverses formations internes et ouvertes au public :</p>
                 <ul>
                     <li>découverte de RxJava</li>
-                    <li>modèle réactif</li>
+                    <li>modèle réactif avec vertx</li>
+                    <li>architecture microservice</li>
                     <li>Apache Cassandra</li>
                     <li>Java 13 & techniques avancées en Java</li>
-                    <li>animation de dojo</li>
+                    <li>animation de dojos</li>
                 </ul>
+            </article>
+            <article>
+                <h2>Agile Grenoble 2018</h2>
+                <p>Présentation de pattern d'architecture utiles à la mise en place de microservice.</p>
             </article>
           </section>
           <section id="snowcamp" class="hidden"><!-- Snowcamp -->
@@ -126,12 +213,15 @@
             <h2 class="print">Diplômes</h2>
             <article>
                 <h2 class="no-print">Diplômes</h2>
-                <ul>
-                    <li>2009 → 2011 <em>Master professionnel génie informatique</em> Université Joseph Fourier à Grenoble</li>
-                    <li>2008 → 2009 <em>Licence informatique</em> Université Joseph Fourier à Grenoble</li>
-                    <li>2006 → 2008 <em>Diplôme universitaire de technologie informatique</em> IUT à Aix-en-Provence</li>
-                    <li>2003 → 2006 <em>Baccalauréat Scientifique option mathématiques</em> Lycée international Georges Duby à Luynes</li>
-                </ul>
+                <p class="date">2011</p>
+                <p class="diplome"><em>Master professionnel génie informatique</em></br> Université Joseph Fourier à Grenoble</p>
+                <p class="date">2009</p>
+                <p class="diplome"><em>Licence informatique</em></br> Université Joseph Fourier à Grenoble</p>
+                <p class="date">2008</p>
+                <p class="diplome"><em>Diplôme universitaire de technologie informatique</em></br> IUT à Aix-en-Provence</p>
+                <p class="date">2006</p>
+                <p class="diplome"><em>Baccalauréat Scientifique option mathématiques</em></br> Lycée international Georges Duby à Luynes</p>
+                <p class="date">2003</p>
             </article>
           </section>
       </main>
